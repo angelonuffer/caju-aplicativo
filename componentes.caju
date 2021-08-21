@@ -41,5 +41,61 @@
       ],
       ["caju.comando.aceita", [], [], []]
     ]
+  ],
+  [
+    "caju.comando",
+    [
+      ["caju.texto", "#97669a"],
+      ["caju.texto", "Ícone"],
+      ["caju.texto", "aplicativo.componente"],
+      ["caju.aparências.padrão", [], [], []]
+    ],
+    [
+      [
+        "caju.escreva",
+        "(ícone => {\n  pai.appendChild(ícone)\n  ícone.classList.add(\"mdi\");\n  (chame => {"
+      ],
+      ["caju.avalie_argumento", [["caju.texto", "nome"]], [], []],
+      [
+        "caju.escreva",
+        "  })(valor => {\n    ícone.classList.add(\"mdi-\" + valor)\n  });\n  (chame => {"
+      ],
+      ["caju.avalie_argumento", [["caju.texto", "fonte"]], [], []],
+      [
+        "caju.escreva",
+        "  })(fonte => {\n    ícone.style.fontSize = fonte.tamanho + \"px\"\n    ícone.style.color = fonte.cor\n  })\n})(document.createElement(\"span\"));"
+      ]
+    ],
+    [
+      [
+        "caju.comando.argumentos",
+        [],
+        [
+          [
+            "caju.argumento",
+            [
+              ["caju.texto", "#d53571"],
+              ["caju.texto", "nome"]
+            ],
+            [
+              ["caju.texto", "aplicativo.texto"],
+              ["caju.texto", "aplicativo.nome.ao_atualizar"]
+            ],
+            []
+          ],
+          [
+            "caju.argumento",
+            [
+              ["caju.texto", "#330b9f"],
+              ["caju.texto", "fonte"]
+            ],
+            [["caju.texto", "aplicativo.fonte"]],
+            []
+          ]
+        ],
+        []
+      ],
+      ["caju.comando.aceita", [], [], []]
+    ]
   ]
 ]

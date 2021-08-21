@@ -45,5 +45,99 @@
       ["caju.comando.argumentos", [], [], []],
       ["caju.comando.aceita", [], [], []]
     ]
+  ],
+  [
+    "caju.comando",
+    [
+      ["caju.texto", "#3687c7"],
+      ["caju.texto", "aplicativo.número"],
+      ["caju.texto", "aplicativo.número"],
+      ["caju.aparências.número", [], [], []]
+    ],
+    [
+      ["caju.escreva", "chame("],
+      ["caju.escreva_valor", [], [], []],
+      ["caju.escreva", ")"]
+    ],
+    [
+      ["caju.comando.argumentos", [], [], []],
+      ["caju.comando.aceita", [], [], []]
+    ]
+  ],
+  [
+    "caju.comando",
+    [
+      ["caju.texto", "#909090"],
+      ["caju.texto", "aplicativo.cor"],
+      ["caju.texto", "aplicativo.cor"],
+      ["caju.aparências.cor", [], [], []]
+    ],
+    [
+      ["caju.escreva", "chame(\""],
+      ["caju.escreva_valor", [], [], []],
+      ["caju.escreva", "\")"]
+    ],
+    [
+      ["caju.comando.argumentos", [], [], []],
+      ["caju.comando.aceita", [], [], []]
+    ]
+  ],
+  [
+    "caju.comando",
+    [
+      ["caju.texto", "#330b9f"],
+      ["caju.texto", "Fonte"],
+      ["caju.texto", "aplicativo.fonte"],
+      ["caju.aparências.padrão", [], [], []]
+    ],
+    [
+      ["caju.escreva", "var fonte = {};\n(chame => {"],
+      ["caju.avalie_argumento", [["caju.texto", "tamanho"]], [], []],
+      [
+        "caju.escreva",
+        "})(valor => {\n  fonte.tamanho = valor\n  chame(fonte)\n});\n(chame => {"
+      ],
+      ["caju.avalie_argumento", [["caju.texto", "cor"]], [], []],
+      [
+        "caju.escreva",
+        "})(valor => {\n  fonte.cor = valor\n  chame(fonte)\n});"
+      ]
+    ],
+    [
+      [
+        "caju.comando.argumentos",
+        [],
+        [
+          [
+            "caju.argumento",
+            [
+              ["caju.texto", "#3687c7"],
+              ["caju.texto", "tamanho"]
+            ],
+            [
+              ["caju.texto", "aplicativo.número"],
+              ["caju.texto", "aplicativo.nome.ao_atualizar"]
+            ],
+            []
+          ],
+          [
+            "caju.argumento",
+            [
+              ["caju.texto", "#909090"],
+              ["caju.texto", "cor"]
+            ],
+            [
+              ["caju.texto", "aplicativo.texto"],
+              ["caju.texto", "aplicativo.cor"],
+              ["caju.texto", "aplicativo.nome.ao_atualizar"],
+              ["caju.texto", "aplicativo.valor"]
+            ],
+            []
+          ]
+        ],
+        []
+      ],
+      ["caju.comando.aceita", [], [], []]
+    ]
   ]
 ]
