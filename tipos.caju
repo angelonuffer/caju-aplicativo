@@ -3,6 +3,34 @@
   [
     "caju.comando",
     [
+      ["caju.texto", "#77b940"],
+      ["caju.texto", "verdadeiro"],
+      ["caju.texto", "aplicativo.lógico"],
+      ["caju.aparências.padrão", [], [], []]
+    ],
+    [["caju.escreva", "true"]],
+    [
+      ["caju.comando.argumentos", [], [], []],
+      ["caju.comando.aceita", [], [], []]
+    ]
+  ],
+  [
+    "caju.comando",
+    [
+      ["caju.texto", "#77b940"],
+      ["caju.texto", "falso"],
+      ["caju.texto", "aplicativo.lógico"],
+      ["caju.aparências.padrão", [], [], []]
+    ],
+    [["caju.escreva", "false"]],
+    [
+      ["caju.comando.argumentos", [], [], []],
+      ["caju.comando.aceita", [], [], []]
+    ]
+  ],
+  [
+    "caju.comando",
+    [
       ["caju.texto", "#d53571"],
       ["caju.texto", "aplicativo.texto"],
       ["caju.texto", "aplicativo.texto"],
