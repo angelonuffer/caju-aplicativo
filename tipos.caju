@@ -1,0 +1,21 @@
+[
+  "0.2.0",
+  [
+    "caju.comando",
+    [
+      ["caju.texto", "#d53571"],
+      ["caju.texto", "aplicativo.texto"],
+      ["caju.texto", "aplicativo.texto"],
+      ["caju.aparências.texto", [], [], []]
+    ],
+    [
+      ["caju.escreva", "chame(\""],
+      ["caju.escreva_valor", [], [], []],
+      ["caju.escreva", "\")"]
+    ],
+    [
+      ["caju.comando.argumentos", [], [], []],
+      ["caju.comando.aceita", [], [], []]
+    ]
+  ]
+]

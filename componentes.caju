@@ -1,0 +1,45 @@
+[
+  "0.2.0",
+  [
+    "caju.comando",
+    [
+      ["caju.texto", "#97669a"],
+      ["caju.texto", "Texto"],
+      ["caju.texto", "aplicativo.componente"],
+      ["caju.aparências.padrão", [], [], []]
+    ],
+    [
+      [
+        "caju.escreva",
+        "(texto => {\n  pai.appendChild(texto)\n  texto.style.margin = 0\n  ;(chame => {"
+      ],
+      ["caju.avalie_argumento", [["caju.texto", "valor"]], [], []],
+      [
+        "caju.escreva",
+        "  })(valor => {\n    texto.textContent = valor\n  })\n})(document.createElement(\"p\"));"
+      ]
+    ],
+    [
+      [
+        "caju.comando.argumentos",
+        [],
+        [
+          [
+            "caju.argumento",
+            [
+              ["caju.texto", "#d53571"],
+              ["caju.texto", "valor"]
+            ],
+            [
+              ["caju.texto", "aplicativo.texto"],
+              ["caju.texto", "aplicativo.nome.ao_atualizar"]
+            ],
+            []
+          ]
+        ],
+        []
+      ],
+      ["caju.comando.aceita", [], [], []]
+    ]
+  ]
+]
