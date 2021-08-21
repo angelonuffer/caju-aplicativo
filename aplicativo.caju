@@ -1,0 +1,44 @@
+[
+  "0.2.0",
+  [
+    "caju.comando",
+    [
+      ["caju.texto", "#d7ab32"],
+      ["caju.texto", "Aplicativo"],
+      ["caju.texto", "caju.global"],
+      ["caju.aparências.padrão", [], [], []]
+    ],
+    [
+      [
+        "caju.escreva",
+        "<meta charset=\"utf-8\">\n<meta name=\"viewport\" content=\"width=device-width\">\n<body></body>\n<link href=\"https://cdn.jsdelivr.net/npm/@mdi/font@5.9.55/css/materialdesignicons.min.css\" rel=\"stylesheet\">\n<script>\n  if ("
+      ],
+      ["caju.avalie_argumento", [["caju.texto", "depurador"]], [], []],
+      [
+        "caju.escreva",
+        "  ) {\n    addEventListener(\"error\", evento => alert(evento.message))\n  }\n</script>\n<script>\n  var fluxo = {\n    canais: {},\n    atualize: (nome, valor) => {\n      if (! fluxo.canais.hasOwnProperty(nome)) {\n        fluxo.canais[nome] = []\n      }\n      fluxo.canais[nome].map(chame => chame(valor))\n    },\n    ao_atualizar: (nome, chame) => {\n      if (! fluxo.canais.hasOwnProperty(nome)) {\n        fluxo.canais[nome] = []\n      }\n      fluxo.canais[nome].push(chame)\n    },\n  }\n  ;(pai => {\n    pai.style.display = \"flex\"\n    pai.style.flexDirection = \"column\"\n    pai.style.margin = 0\n    pai.style.height = \"100%\";"
+      ],
+      ["caju.avalie_bloco", [], [], []],
+      ["caju.escreva", "  })(document.body)\n</script>"]
+    ],
+    [
+      [
+        "caju.comando.argumentos",
+        [],
+        [
+          [
+            "caju.argumento",
+            [
+              ["caju.texto", "#77b940"],
+              ["caju.texto", "depurador"]
+            ],
+            [["caju.texto", "aplicativo.lógico"]],
+            []
+          ]
+        ],
+        []
+      ],
+      ["caju.comando.aceita", [], [["caju.texto", "aplicativo.componente"]], []]
+    ]
+  ]
+]
