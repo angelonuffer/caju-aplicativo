@@ -1,5 +1,6 @@
 [
   "0.2.0",
+  ["caju.importe", "./layout.caju"],
   ["caju.importe", "./componentes.caju"],
   ["caju.importe", "./tipos.caju"],
   [

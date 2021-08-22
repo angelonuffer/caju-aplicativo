@@ -1,0 +1,302 @@
+[
+  "0.2.0",
+  [
+    "caju.comando",
+    [
+      ["caju.texto", "#d7ab32"],
+      ["caju.texto", "Linha"],
+      ["caju.texto", "aplicativo.componente"],
+      ["caju.aparências.padrão", [], [], []]
+    ],
+    [
+      [
+        "caju.escreva",
+        "pai.appendChild((pai => {\r\n  pai.style.display = \"flex\"\r\n  pai.style.flexDirection = \"row\"\r\n  pai.style.alignItems = \"center\";\r\n  (chame => {"
+      ],
+      ["caju.avalie_argumento", [["caju.texto", "cor_de_fundo"]], [], []],
+      [
+        "caju.escreva",
+        "  })(valor => {\n    pai.style.backgroundColor = valor\n  });\n  (chame => {"
+      ],
+      [
+        "caju.avalie_argumento",
+        [["caju.texto", "espaço_entre_elementos"]],
+        [],
+        []
+      ],
+      [
+        "caju.escreva",
+        "  })(valor => {\n    pai.style.gap = valor + \"px\"\n  });\n  (chame => {"
+      ],
+      ["caju.avalie_argumento", [["caju.texto", "fonte"]], [], []],
+      [
+        "caju.escreva",
+        "  })(fonte => {\n    pai.style.fontSize = fonte.tamanho + \"px\"\n    pai.style.color = fonte.cor\n  });\n  (chame => {"
+      ],
+      ["caju.avalie_argumento", [["caju.texto", "margem_interna"]], [], []],
+      [
+        "caju.escreva",
+        "  })(margem_interna => {\n    pai.style.padding = margem_interna\n  });\n  (chame => {"
+      ],
+      ["caju.avalie_argumento", [["caju.texto", "crescimento"]], [], []],
+      [
+        "caju.escreva",
+        "  })(crescimento => {\n    pai.style.flexGrow = crescimento\n  });"
+      ],
+      ["caju.avalie_argumento", [["caju.texto", "justificar"]], [], []],
+      ["caju.avalie_bloco", [], [], []],
+      ["caju.escreva", "  return pai\n})(document.createElement(\"span\")));"]
+    ],
+    [
+      [
+        "caju.comando.argumentos",
+        [],
+        [
+          [
+            "caju.argumento",
+            [
+              ["caju.texto", "#909090"],
+              ["caju.texto", "cor_de_fundo"]
+            ],
+            [
+              ["caju.texto", "aplicativo.texto"],
+              ["caju.texto", "aplicativo.cor"],
+              ["caju.texto", "aplicativo.nome.ao_atualizar"]
+            ],
+            []
+          ],
+          [
+            "caju.argumento",
+            [
+              ["caju.texto", "#3687c7"],
+              ["caju.texto", "espaço_entre_elementos"]
+            ],
+            [
+              ["caju.texto", "aplicativo.número"],
+              ["caju.texto", "aplicativo.nome.ao_atualizar"]
+            ],
+            []
+          ],
+          [
+            "caju.argumento",
+            [
+              ["caju.texto", "#330b9f"],
+              ["caju.texto", "fonte"]
+            ],
+            [["caju.texto", "aplicativo.fonte"]],
+            []
+          ],
+          [
+            "caju.argumento",
+            [
+              ["caju.texto", "#3687c7"],
+              ["caju.texto", "margem_interna"]
+            ],
+            [
+              ["caju.texto", "aplicativo.número"],
+              ["caju.texto", "aplicativo.nome.ao_atualizar"]
+            ],
+            []
+          ],
+          [
+            "caju.argumento",
+            [
+              ["caju.texto", "#3687c7"],
+              ["caju.texto", "crescimento"]
+            ],
+            [
+              ["caju.texto", "aplicativo.número"],
+              ["caju.texto", "aplicativo.nome.ao_atualizar"]
+            ],
+            []
+          ],
+          [
+            "caju.argumento",
+            [
+              ["caju.texto", "#330b9f"],
+              ["caju.texto", "justificar"]
+            ],
+            [["caju.texto", "aplicativo.justificar"]],
+            []
+          ]
+        ],
+        []
+      ],
+      [
+        "caju.comando.aceita",
+        [],
+        [
+          ["caju.texto", "aplicativo.componente"],
+          ["caju.texto", "aplicativo.evento"]
+        ],
+        []
+      ]
+    ]
+  ],
+  [
+    "caju.comando",
+    [
+      ["caju.texto", "#d7ab32"],
+      ["caju.texto", "Coluna"],
+      ["caju.texto", "aplicativo.componente"],
+      ["caju.aparências.padrão", [], [], []]
+    ],
+    [
+      [
+        "caju.escreva",
+        "pai.appendChild((pai => {\r\n  pai.style.display = \"flex\"\r\n  pai.style.flexDirection = \"column\"\r\n  pai.style.alignItems = \"center\";\r\n  (chame => {"
+      ],
+      ["caju.avalie_argumento", [["caju.texto", "cor_de_fundo"]], [], []],
+      [
+        "caju.escreva",
+        "  })(valor => {\n    pai.style.backgroundColor = valor\n  });\n  (chame => {"
+      ],
+      [
+        "caju.avalie_argumento",
+        [["caju.texto", "espaço_entre_elementos"]],
+        [],
+        []
+      ],
+      [
+        "caju.escreva",
+        "  })(valor => {\n    pai.style.gap = valor + \"px\"\n  });\n  (chame => {"
+      ],
+      ["caju.avalie_argumento", [["caju.texto", "fonte"]], [], []],
+      [
+        "caju.escreva",
+        "  })(fonte => {\n    pai.style.fontSize = fonte.tamanho + \"px\"\n    pai.style.color = fonte.cor\n  });\n  (chame => {"
+      ],
+      ["caju.avalie_argumento", [["caju.texto", "margem_interna"]], [], []],
+      [
+        "caju.escreva",
+        "  })(margem_interna => {\n    pai.style.padding = margem_interna\n  });\n  (chame => {"
+      ],
+      ["caju.avalie_argumento", [["caju.texto", "crescimento"]], [], []],
+      [
+        "caju.escreva",
+        "  })(crescimento => {\n    pai.style.flexGrow = crescimento\n  });"
+      ],
+      ["caju.avalie_argumento", [["caju.texto", "justificar"]], [], []],
+      ["caju.avalie_bloco", [], [], []],
+      ["caju.escreva", "  return pai\n})(document.createElement(\"span\")));"]
+    ],
+    [
+      [
+        "caju.comando.argumentos",
+        [],
+        [
+          [
+            "caju.argumento",
+            [
+              ["caju.texto", "#909090"],
+              ["caju.texto", "cor_de_fundo"]
+            ],
+            [
+              ["caju.texto", "aplicativo.texto"],
+              ["caju.texto", "aplicativo.cor"],
+              ["caju.texto", "aplicativo.nome.ao_atualizar"]
+            ],
+            []
+          ],
+          [
+            "caju.argumento",
+            [
+              ["caju.texto", "#3687c7"],
+              ["caju.texto", "espaço_entre_elementos"]
+            ],
+            [
+              ["caju.texto", "aplicativo.número"],
+              ["caju.texto", "aplicativo.nome.ao_atualizar"]
+            ],
+            []
+          ],
+          [
+            "caju.argumento",
+            [
+              ["caju.texto", "#330b9f"],
+              ["caju.texto", "fonte"]
+            ],
+            [["caju.texto", "aplicativo.fonte"]],
+            []
+          ],
+          [
+            "caju.argumento",
+            [
+              ["caju.texto", "#3687c7"],
+              ["caju.texto", "margem_interna"]
+            ],
+            [
+              ["caju.texto", "aplicativo.número"],
+              ["caju.texto", "aplicativo.nome.ao_atualizar"]
+            ],
+            []
+          ],
+          [
+            "caju.argumento",
+            [
+              ["caju.texto", "#3687c7"],
+              ["caju.texto", "crescimento"]
+            ],
+            [
+              ["caju.texto", "aplicativo.número"],
+              ["caju.texto", "aplicativo.nome.ao_atualizar"]
+            ],
+            []
+          ],
+          [
+            "caju.argumento",
+            [
+              ["caju.texto", "#330b9f"],
+              ["caju.texto", "justificar"]
+            ],
+            [["caju.texto", "aplicativo.justificar"]],
+            []
+          ]
+        ],
+        []
+      ],
+      [
+        "caju.comando.aceita",
+        [],
+        [
+          ["caju.texto", "aplicativo.componente"],
+          ["caju.texto", "aplicativo.evento"]
+        ],
+        []
+      ]
+    ]
+  ],
+  [
+    "caju.comando",
+    [
+      ["caju.texto", "#97669a"],
+      ["caju.texto", "Espaço"],
+      ["caju.texto", "aplicativo.componente"],
+      ["caju.aparências.padrão", [], [], []]
+    ],
+    [
+      [
+        "caju.escreva",
+        "pai.appendChild((espaço => {\r\n  espaço.style.flexGrow = 1\r\n  return espaço\r\n})(document.createElement(\"span\")));"
+      ]
+    ],
+    [
+      ["caju.comando.argumentos", [], [], []],
+      ["caju.comando.aceita", [], [], []]
+    ]
+  ],
+  [
+    "caju.comando",
+    [
+      ["caju.texto", "#330b9f"],
+      ["caju.texto", "aplicativo.justificar.centro"],
+      ["caju.texto", "aplicativo.justificar"],
+      ["caju.aparências.padrão", [], [], []]
+    ],
+    [["caju.escreva", "pai.style.justifyContent = \"center\";"]],
+    [
+      ["caju.comando.argumentos", [], [], []],
+      ["caju.comando.aceita", [], [], []]
+    ]
+  ]
+]
