@@ -85,6 +85,42 @@
   [
     "caju.comando",
     [
+      ["caju.texto", "#ed6d25"],
+      ["caju.texto", "aplicativo.nome.atualize"],
+      ["caju.texto", "aplicativo.nome.atualize"],
+      ["caju.aparências.nome", [], [], []]
+    ],
+    [
+      ["caju.escreva", ";fluxo.atualize(\""],
+      ["caju.escreva_valor", [], [], []],
+      ["caju.escreva", "\", valor);"]
+    ],
+    [
+      ["caju.comando.argumentos", [], [], []],
+      ["caju.comando.aceita", [], [], []]
+    ]
+  ],
+  [
+    "caju.comando",
+    [
+      ["caju.texto", "#ed6d25"],
+      ["caju.texto", "aplicativo.nome.ao_atualizar"],
+      ["caju.texto", "aplicativo.nome.ao_atualizar"],
+      ["caju.aparências.nome", [], [], []]
+    ],
+    [
+      ["caju.escreva", ";fluxo.ao_atualizar(\""],
+      ["caju.escreva_valor", [], [], []],
+      ["caju.escreva", "\", chame);"]
+    ],
+    [
+      ["caju.comando.argumentos", [], [], []],
+      ["caju.comando.aceita", [], [], []]
+    ]
+  ],
+  [
+    "caju.comando",
+    [
       ["caju.texto", "#330b9f"],
       ["caju.texto", "Fonte"],
       ["caju.texto", "aplicativo.fonte"],

@@ -97,5 +97,41 @@
       ],
       ["caju.comando.aceita", [], [], []]
     ]
+  ],
+  [
+    "caju.comando",
+    [
+      ["caju.texto", "#97669a"],
+      ["caju.texto", "CampoDeNúmero"],
+      ["caju.texto", "aplicativo.componente"],
+      ["caju.aparências.padrão", [], [], []]
+    ],
+    [
+      [
+        "caju.escreva",
+        ";(campo => {\n  pai.appendChild(campo)\n  campo.type = \"number\"\n  campo.style.flexGrow = 1\n  campo.addEventListener(\"input\", e => {\n    var valor = campo.value;"
+      ],
+      ["caju.avalie_argumento", [["caju.texto", "nome"]], [], []],
+      ["caju.escreva", "  })\n})(document.createElement(\"input\"));"]
+    ],
+    [
+      [
+        "caju.comando.argumentos",
+        [],
+        [
+          [
+            "caju.argumento",
+            [
+              ["caju.texto", "#ed6d25"],
+              ["caju.texto", "nome"]
+            ],
+            [["caju.texto", "aplicativo.nome.atualize"]],
+            []
+          ]
+        ],
+        []
+      ],
+      ["caju.comando.aceita", [], [], []]
+    ]
   ]
 ]
