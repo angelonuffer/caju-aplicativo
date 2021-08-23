@@ -1,0 +1,87 @@
+[
+  "0.2.0",
+  [
+    "caju.comando",
+    [
+      ["caju.texto", "#d7ab32"],
+      ["caju.texto", "Livro"],
+      ["caju.texto", "aplicativo.componente"],
+      ["caju.aparências.padrão", [], [], []]
+    ],
+    [
+      [
+        "caju.escreva",
+        ";pai.appendChild((pai => {\n  pai.style.flexGrow = 1;\n  (chame => {"
+      ],
+      ["caju.avalie_argumento", [["caju.texto", "página"]], [], []],
+      [
+        "caju.escreva",
+        "  })(valor => {\n    [...pai.children].map(página => {\n      if (página.nome == valor) {\n        página.style.display = \"block\"\n      } else {\n        página.style.display = \"none\"\n      }\n    })\n  });"
+      ],
+      ["caju.avalie_bloco", [], [], []],
+      [
+        "caju.escreva",
+        "  [...pai.children].slice(1).map(página => {\r\n    página.style.display = \"none\"\r\n  })\r\n  return pai\r\n})(document.createElement(\"div\")));"
+      ]
+    ],
+    [
+      [
+        "caju.comando.argumentos",
+        [],
+        [
+          [
+            "caju.argumento",
+            [
+              ["caju.texto", "#ed6d25"],
+              ["caju.texto", "página"]
+            ],
+            [["caju.texto", "aplicativo.nome.ao_atualizar"]],
+            []
+          ]
+        ],
+        []
+      ],
+      [
+        "caju.comando.aceita",
+        [],
+        [["caju.texto", "aplicativo.livro.página"]],
+        []
+      ]
+    ]
+  ],
+  [
+    "caju.comando",
+    [
+      ["caju.texto", "#d7ab32"],
+      ["caju.texto", "Página"],
+      ["caju.texto", "aplicativo.livro.página"],
+      ["caju.aparências.padrão", [], [], []]
+    ],
+    [
+      ["caju.escreva", ";pai.appendChild((pai => {\n  (chame => {"],
+      ["caju.avalie_argumento", [["caju.texto", "nome"]], [], []],
+      ["caju.escreva", "  })(valor => {\n    pai.nome = valor\n  });"],
+      ["caju.avalie_bloco", [], [], []],
+      ["caju.escreva", "  return pai\n})(document.createElement(\"div\")));"]
+    ],
+    [
+      [
+        "caju.comando.argumentos",
+        [],
+        [
+          [
+            "caju.argumento",
+            [
+              ["caju.texto", "#d53571"],
+              ["caju.texto", "nome"]
+            ],
+            [["caju.texto", "aplicativo.texto"]],
+            []
+          ]
+        ],
+        []
+      ],
+      ["caju.comando.aceita", [], [["caju.texto", "aplicativo.componente"]], []]
+    ]
+  ]
+]
