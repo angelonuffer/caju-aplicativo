@@ -4,6 +4,8 @@
   ["caju.importe", "./layout.caju"],
   ["caju.importe", "./componentes.caju"],
   ["caju.importe", "./tipos.caju"],
+  ["caju.importe", "./eventos.caju"],
+  ["caju.importe", "./comandos.caju"],
   [
     "caju.comando",
     [

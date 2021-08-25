@@ -1,0 +1,21 @@
+[
+  "0.2.0",
+  [
+    "caju.comando",
+    [
+      ["caju.texto", "#d7ab32"],
+      ["caju.texto", "AoClicar"],
+      ["caju.texto", "aplicativo.evento"],
+      ["caju.aparências.agregado", [], [], []]
+    ],
+    [
+      ["caju.escreva", "pai.addEventListener(\"click\", () => {"],
+      ["caju.avalie_bloco", [], [], []],
+      ["caju.escreva", "});"]
+    ],
+    [
+      ["caju.comando.argumentos", [], [], []],
+      ["caju.comando.aceita", [], [["caju.texto", "aplicativo.comando"]], []]
+    ]
+  ]
+]
