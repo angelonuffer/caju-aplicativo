@@ -169,5 +169,24 @@
       ],
       ["caju.comando.aceita", [], [], []]
     ]
+  ],
+  [
+    "caju.comando",
+    [
+      ["caju.texto", "#97669a"],
+      ["caju.texto", "VisualizadorHTML"],
+      ["caju.texto", "aplicativo.componente"],
+      ["caju.aparências.padrão", [], [], []]
+    ],
+    [
+      [
+        "caju.escreva",
+        "(visualizador => {\n  pai.appendChild(visualizador)\n  visualizador.style.borderWidth = \"3px\"\n  visualizador.style.borderColor = \"#000\"\n  visualizador.style.flexGrow = 1\n  visualizador.style.display = \"flex\"\n})(document.createElement(\"iframe\"));"
+      ]
+    ],
+    [
+      ["caju.comando.argumentos", [], [], []],
+      ["caju.comando.aceita", [], [], []]
+    ]
   ]
 ]

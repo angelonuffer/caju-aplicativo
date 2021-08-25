@@ -11,7 +11,7 @@
     [
       [
         "caju.escreva",
-        "pai.appendChild((pai => {\r\n  pai.style.display = \"flex\"\r\n  pai.style.flexDirection = \"row\"\r\n  pai.style.alignItems = \"center\";\r\n  (chame => {"
+        "pai.appendChild((pai => {\r\n  pai.style.display = \"flex\"\r\n  pai.style.flexDirection = \"row\";\r\n  (chame => {"
       ],
       ["caju.avalie_argumento", [["caju.texto", "cor_de_fundo"]], [], []],
       [
@@ -144,7 +144,7 @@
     [
       [
         "caju.escreva",
-        "pai.appendChild((pai => {\r\n  pai.style.display = \"flex\"\r\n  pai.style.flexDirection = \"column\"\r\n  pai.style.alignItems = \"center\";\r\n  (chame => {"
+        "pai.appendChild((pai => {\r\n  pai.style.display = \"flex\"\r\n  pai.style.flexDirection = \"column\";\r\n  (chame => {"
       ],
       ["caju.avalie_argumento", [["caju.texto", "cor_de_fundo"]], [], []],
       [
