@@ -16,7 +16,7 @@
       ["caju.avalie_argumento", [["caju.texto", "página"]], [], []],
       [
         "caju.escreva",
-        "  })(valor => {\n    [...pai.children].map(página => {\n      if (página.nome == valor) {\n        página.style.display = \"block\"\n      } else {\n        página.style.display = \"none\"\n      }\n    })\n  });"
+        "  })(valor => {\n    [...pai.children].map(página => {\n      if (página.nome == valor) {\n        página.style.display = \"flex\"\n      } else {\n        página.style.display = \"none\"\n      }\n    })\n  });"
       ],
       ["caju.avalie_bloco", [], [], []],
       [
