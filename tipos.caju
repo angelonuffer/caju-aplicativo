@@ -121,6 +121,24 @@
   [
     "caju.comando",
     [
+      ["caju.texto", "#ed6d25"],
+      ["caju.texto", "aplicativo.nome"],
+      ["caju.texto", "aplicativo.nome"],
+      ["caju.aparências.nome", [], [], []]
+    ],
+    [
+      ["caju.escreva", "chame(\""],
+      ["caju.escreva_valor", [], [], []],
+      ["caju.escreva", "\")"]
+    ],
+    [
+      ["caju.comando.argumentos", [], [], []],
+      ["caju.comando.aceita", [], [], []]
+    ]
+  ],
+  [
+    "caju.comando",
+    [
       ["caju.texto", "#330b9f"],
       ["caju.texto", "Fonte"],
       ["caju.texto", "aplicativo.fonte"],

@@ -21,7 +21,7 @@
       ["caju.avalie_bloco", [], [], []],
       [
         "caju.escreva",
-        "  [...pai.children].slice(1).map(página => {\r\n    página.style.display = \"none\"\r\n  })\r\n  return pai\r\n})(document.createElement(\"div\")));"
+        "  [...pai.children].map(página => {\r\n    página.style.display = \"none\"\r\n  })\r\n  return pai\r\n})(document.createElement(\"div\")));"
       ]
     ],
     [
@@ -85,6 +85,125 @@
         []
       ],
       ["caju.comando.aceita", [], [["caju.texto", "aplicativo.componente"]], []]
+    ]
+  ],
+  [
+    "caju.comando",
+    [
+      ["caju.texto", "#d7ab32"],
+      ["caju.texto", "BarraDeNavegação"],
+      ["caju.texto", "aplicativo.componente"],
+      ["caju.aparências.padrão", [], [], []]
+    ],
+    [
+      [
+        "caju.escreva",
+        "pai.appendChild((pai => {\n  pai.style.display = \"flex\"\n  pai.style.flexDirection = \"row\"\n  pai.style.color = \"#ffffffbf\"\n  pai.style.fontSize = \"24px\";\n  (chame => {"
+      ],
+      ["caju.avalie_argumento", [["caju.texto", "nome"]], [], []],
+      [
+        "caju.escreva",
+        "  })(valor => {\n    pai.nome = valor\n  });\n  (chame => {"
+      ],
+      ["caju.avalie_argumento", [["caju.texto", "cor"]], [], []],
+      [
+        "caju.escreva",
+        "  })(valor => {\n    pai.style.backgroundColor = valor\n  });"
+      ],
+      ["caju.avalie_bloco", [], [], []],
+      [
+        "caju.escreva",
+        "  fluxo.atualize(pai.nome, pai.children[0].nome)\n  return pai\n})(document.createElement(\"span\")));"
+      ]
+    ],
+    [
+      [
+        "caju.comando.argumentos",
+        [],
+        [
+          [
+            "caju.argumento",
+            [
+              ["caju.texto", "#ed6d25"],
+              ["caju.texto", "nome"]
+            ],
+            [["caju.texto", "aplicativo.nome"]],
+            []
+          ],
+          [
+            "caju.argumento",
+            [
+              ["caju.texto", "#909090"],
+              ["caju.texto", "cor"]
+            ],
+            [
+              ["caju.texto", "aplicativo.texto"],
+              ["caju.texto", "aplicativo.cor"]
+            ],
+            []
+          ]
+        ],
+        []
+      ],
+      [
+        "caju.comando.aceita",
+        [],
+        [["caju.texto", "aplicativo.botão_de_navegação"]],
+        []
+      ]
+    ]
+  ],
+  [
+    "caju.comando",
+    [
+      ["caju.texto", "#97669a"],
+      ["caju.texto", "BotãoDeNavegação"],
+      ["caju.texto", "aplicativo.botão_de_navegação"],
+      ["caju.aparências.padrão", [], [], []]
+    ],
+    [
+      [
+        "caju.escreva",
+        "pai.appendChild((ícone => {\n  ícone.classList.add(\"mdi\")\n  ícone.style.display = \"flex\"\n  ícone.style.padding =\"12px\"\n  ícone.style.flexGrow = 1\n  ícone.style.justifyContent = \"center\";\n  (chame => {"
+      ],
+      ["caju.avalie_argumento", [["caju.texto", "nome"]], [], []],
+      [
+        "caju.escreva",
+        "  })(valor => {\n    ícone.nome = valor\n  });\n  (chame => {"
+      ],
+      ["caju.avalie_argumento", [["caju.texto", "ícone"]], [], []],
+      [
+        "caju.escreva",
+        "  })(valor => {\n    ícone.classList.add(\"mdi-\" + valor)\n  })\n  ícone.addEventListener(\"click\", () => {\n    fluxo.atualize(pai.nome, ícone.nome)\n  })\n  fluxo.ao_atualizar(pai.nome, valor => {\n    if (ícone.nome == valor) {\n      ícone.style.color = \"#fff\"\n    } else {\n      ícone.style.color = \"#ffffffbf\"\n    }\n  })\n  return ícone\n})(document.createElement(\"span\")));"
+      ]
+    ],
+    [
+      [
+        "caju.comando.argumentos",
+        [],
+        [
+          [
+            "caju.argumento",
+            [
+              ["caju.texto", "#d53571"],
+              ["caju.texto", "nome"]
+            ],
+            [["caju.texto", "aplicativo.texto"]],
+            []
+          ],
+          [
+            "caju.argumento",
+            [
+              ["caju.texto", "#d53571"],
+              ["caju.texto", "ícone"]
+            ],
+            [["caju.texto", "aplicativo.texto"]],
+            []
+          ]
+        ],
+        []
+      ],
+      ["caju.comando.aceita", [], [], []]
     ]
   ]
 ]
