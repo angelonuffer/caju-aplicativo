@@ -11,7 +11,7 @@
     [
       [
         "caju.escreva",
-        ";pai.appendChild((pai => {\n  pai.style.flexGrow = 1;\n  (chame => {"
+        "pai.appendChild((pai => {\n  pai.style.display = \"flex\"\n  pai.style.flexGrow = 1;\n  (chame => {"
       ],
       ["caju.avalie_argumento", [["caju.texto", "página"]], [], []],
       [
@@ -58,7 +58,10 @@
       ["caju.aparências.padrão", [], [], []]
     ],
     [
-      ["caju.escreva", ";pai.appendChild((pai => {\n  (chame => {"],
+      [
+        "caju.escreva",
+        "pai.appendChild((pai => {\n  pai.style.display = \"flex\"\n  pai.style.flexGrow = 1;\n  (chame => {"
+      ],
       ["caju.avalie_argumento", [["caju.texto", "nome"]], [], []],
       ["caju.escreva", "  })(valor => {\n    pai.nome = valor\n  });"],
       ["caju.avalie_bloco", [], [], []],
