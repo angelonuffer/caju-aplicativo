@@ -1,0 +1,89 @@
+[
+  "0.2.0",
+  [
+    "caju.comando",
+    [
+      ["caju.texto", "#97669a"],
+      ["caju.texto", "armazém.descarregue"],
+      ["caju.texto", "aplicativo.comando"],
+      ["caju.aparências.padrão", [], [], []]
+    ],
+    [
+      ["caju.escreva", "localStorage["],
+      ["caju.avalie_argumento", [["caju.texto", "endereço"]], [], []],
+      ["caju.escreva", "] = JSON.stringify("],
+      ["caju.avalie_argumento", [["caju.texto", "valor"]], [], []],
+      ["caju.escreva", ");"]
+    ],
+    [
+      [
+        "caju.comando.argumentos",
+        [],
+        [
+          [
+            "caju.argumento",
+            [
+              ["caju.texto", "#d53571"],
+              ["caju.texto", "endereço"]
+            ],
+            [
+              ["caju.texto", "aplicativo.comando.nome"],
+              ["caju.texto", "aplicativo.comando.texto"]
+            ],
+            []
+          ],
+          [
+            "caju.argumento",
+            [
+              ["caju.texto", "#ed6d25"],
+              ["caju.texto", "valor"]
+            ],
+            [
+              ["caju.texto", "aplicativo.comando.nome"],
+              ["caju.texto", "aplicativo.comando.texto"]
+            ],
+            []
+          ]
+        ],
+        []
+      ],
+      ["caju.comando.aceita", [], [], []]
+    ]
+  ],
+  [
+    "caju.comando",
+    [
+      ["caju.texto", "#97669a"],
+      ["caju.texto", "armazém.carregue"],
+      ["caju.texto", "aplicativo.comando"],
+      ["caju.aparências.padrão", [], [], []]
+    ],
+    [
+      ["caju.escreva", "JSON.parse(localStorage["],
+      ["caju.avalie_argumento", [["caju.texto", "endereço"]], [], []],
+      ["caju.escreva", "])"]
+    ],
+    [
+      [
+        "caju.comando.argumentos",
+        [],
+        [
+          [
+            "caju.argumento",
+            [
+              ["caju.texto", "#d53571"],
+              ["caju.texto", "endereço"]
+            ],
+            [
+              ["caju.texto", "aplicativo.comando.nome"],
+              ["caju.texto", "aplicativo.comando.texto"]
+            ],
+            []
+          ]
+        ],
+        []
+      ],
+      ["caju.comando.aceita", [], [], []]
+    ]
+  ]
+]

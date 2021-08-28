@@ -6,6 +6,7 @@
   ["caju.importe", "./tipos.caju"],
   ["caju.importe", "./eventos.caju"],
   ["caju.importe", "./comandos.caju"],
+  ["caju.importe", "./armazém.caju"],
   [
     "caju.comando",
     [

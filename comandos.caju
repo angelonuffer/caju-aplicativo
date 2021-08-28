@@ -208,7 +208,8 @@
     [
       ["caju.avalie_argumento", [["caju.texto", "nome"]], [], []],
       ["caju.escreva", " = "],
-      ["caju.avalie_argumento", [["caju.texto", "valor"]], [], []]
+      ["caju.avalie_argumento", [["caju.texto", "valor"]], [], []],
+      ["caju.escreva", ";"]
     ],
     [
       [
