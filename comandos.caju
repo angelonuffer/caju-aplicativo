@@ -3,6 +3,20 @@
   [
     "caju.comando",
     [
+      ["caju.texto", "#97669a"],
+      ["caju.texto", "nulo"],
+      ["caju.texto", "aplicativo.comando.nulo"],
+      ["caju.aparências.padrão", [], [], []]
+    ],
+    [["caju.escreva", "null"]],
+    [
+      ["caju.comando.argumentos", [], [], []],
+      ["caju.comando.aceita", [], [], []]
+    ]
+  ],
+  [
+    "caju.comando",
+    [
       ["caju.texto", "#d53571"],
       ["caju.texto", "aplicativo.comando.texto"],
       ["caju.texto", "aplicativo.comando.texto"],
@@ -265,6 +279,106 @@
         []
       ],
       ["caju.comando.aceita", [], [["caju.texto", "aplicativo.comando"]], []]
+    ]
+  ],
+  [
+    "caju.comando",
+    [
+      ["caju.texto", "#77b940"],
+      ["caju.texto", "=="],
+      ["caju.texto", "aplicativo.comando.lógico"],
+      ["caju.aparências.padrão", [], [], []]
+    ],
+    [
+      ["caju.avalie_argumento", [["caju.texto", "a"]], [], []],
+      ["caju.escreva", "=="],
+      ["caju.avalie_argumento", [["caju.texto", "b"]], [], []]
+    ],
+    [
+      [
+        "caju.comando.argumentos",
+        [],
+        [
+          [
+            "caju.argumento",
+            [
+              ["caju.texto", "#ed6d25"],
+              ["caju.texto", "a"]
+            ],
+            [
+              ["caju.texto", "aplicativo.comando.nulo"],
+              ["caju.texto", "aplicativo.comando.nome"],
+              ["caju.texto", "aplicativo.comando.texto"]
+            ],
+            []
+          ],
+          [
+            "caju.argumento",
+            [
+              ["caju.texto", "#ed6d25"],
+              ["caju.texto", "b"]
+            ],
+            [
+              ["caju.texto", "aplicativo.comando.nulo"],
+              ["caju.texto", "aplicativo.comando.nome"],
+              ["caju.texto", "aplicativo.comando.texto"]
+            ],
+            []
+          ]
+        ],
+        []
+      ],
+      ["caju.comando.aceita", [], [], []]
+    ]
+  ],
+  [
+    "caju.comando",
+    [
+      ["caju.texto", "#77b940"],
+      ["caju.texto", "!="],
+      ["caju.texto", "aplicativo.comando.lógico"],
+      ["caju.aparências.padrão", [], [], []]
+    ],
+    [
+      ["caju.avalie_argumento", [["caju.texto", "a"]], [], []],
+      ["caju.escreva", "!="],
+      ["caju.avalie_argumento", [["caju.texto", "b"]], [], []]
+    ],
+    [
+      [
+        "caju.comando.argumentos",
+        [],
+        [
+          [
+            "caju.argumento",
+            [
+              ["caju.texto", "#ed6d25"],
+              ["caju.texto", "a"]
+            ],
+            [
+              ["caju.texto", "aplicativo.comando.nulo"],
+              ["caju.texto", "aplicativo.comando.nome"],
+              ["caju.texto", "aplicativo.comando.texto"]
+            ],
+            []
+          ],
+          [
+            "caju.argumento",
+            [
+              ["caju.texto", "#ed6d25"],
+              ["caju.texto", "b"]
+            ],
+            [
+              ["caju.texto", "aplicativo.comando.nulo"],
+              ["caju.texto", "aplicativo.comando.nome"],
+              ["caju.texto", "aplicativo.comando.texto"]
+            ],
+            []
+          ]
+        ],
+        []
+      ],
+      ["caju.comando.aceita", [], [], []]
     ]
   ]
 ]
