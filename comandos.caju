@@ -55,6 +55,39 @@
     "caju.comando",
     [
       ["caju.texto", "#97669a"],
+      ["caju.texto", "pergunte"],
+      ["caju.texto", "aplicativo.comando"],
+      ["caju.aparências.padrão", [], [], []]
+    ],
+    [
+      ["caju.escreva", "prompt("],
+      ["caju.avalie_argumento", [["caju.texto", "mensagem"]], [], []],
+      ["caju.escreva", ");"]
+    ],
+    [
+      [
+        "caju.comando.argumentos",
+        [],
+        [
+          [
+            "caju.argumento",
+            [
+              ["caju.texto", "#d53571"],
+              ["caju.texto", "mensagem"]
+            ],
+            [["caju.texto", "aplicativo.comando.texto"]],
+            []
+          ]
+        ],
+        []
+      ],
+      ["caju.comando.aceita", [], [], []]
+    ]
+  ],
+  [
+    "caju.comando",
+    [
+      ["caju.texto", "#97669a"],
       ["caju.texto", "fluxo.atualize"],
       ["caju.texto", "aplicativo.comando"],
       ["caju.aparências.padrão", [], [], []]
