@@ -228,5 +228,43 @@
       ],
       ["caju.comando.aceita", [], [], []]
     ]
+  ],
+  [
+    "caju.comando",
+    [
+      ["caju.texto", "#d7ab32"],
+      ["caju.texto", "se"],
+      ["caju.texto", "aplicativo.comando"],
+      ["caju.aparências.padrão", [], [], []]
+    ],
+    [
+      ["caju.escreva", "if ("],
+      ["caju.avalie_argumento", [["caju.texto", "condição"]], [], []],
+      ["caju.escreva", ") {"],
+      ["caju.avalie_bloco", [], [], []],
+      ["caju.escreva", "};"]
+    ],
+    [
+      [
+        "caju.comando.argumentos",
+        [],
+        [
+          [
+            "caju.argumento",
+            [
+              ["caju.texto", "#77b940"],
+              ["caju.texto", "condição"]
+            ],
+            [
+              ["caju.texto", "aplicativo.lógico"],
+              ["caju.texto", "aplicativo.comando.lógico"]
+            ],
+            []
+          ]
+        ],
+        []
+      ],
+      ["caju.comando.aceita", [], [["caju.texto", "aplicativo.comando"]], []]
+    ]
   ]
 ]
