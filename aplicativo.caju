@@ -46,7 +46,15 @@
         ],
         []
       ],
-      ["caju.comando.aceita", [], [["caju.texto", "aplicativo.componente"]], []]
+      [
+        "caju.comando.aceita",
+        [],
+        [
+          ["caju.texto", "aplicativo.componente"],
+          ["caju.texto", "aplicativo.evento"]
+        ],
+        []
+      ]
     ]
   ]
 ]

@@ -17,5 +17,23 @@
       ["caju.comando.argumentos", [], [], []],
       ["caju.comando.aceita", [], [["caju.texto", "aplicativo.comando"]], []]
     ]
+  ],
+  [
+    "caju.comando",
+    [
+      ["caju.texto", "#d7ab32"],
+      ["caju.texto", "AoCarregar"],
+      ["caju.texto", "aplicativo.evento"],
+      ["caju.aparências.agregado", [], [], []]
+    ],
+    [
+      ["caju.escreva", "window.addEventListener(\"load\", () => {"],
+      ["caju.avalie_bloco", [], [], []],
+      ["caju.escreva", "});"]
+    ],
+    [
+      ["caju.comando.argumentos", [], [], []],
+      ["caju.comando.aceita", [], [["caju.texto", "aplicativo.comando"]], []]
+    ]
   ]
 ]
