@@ -1,0 +1,39 @@
+[
+  "0.2.0",
+  [
+    "caju.comando",
+    [
+      ["caju.texto", "#d53571"],
+      ["caju.texto", "sha256"],
+      ["caju.texto", "aplicativo.comando.texto"],
+      ["caju.aparências.padrão", [], [], []]
+    ],
+    [
+      ["caju.escreva", "sha256("],
+      ["caju.avalie_argumento", [["caju.texto", "texto"]], [], []],
+      ["caju.escreva", ")"]
+    ],
+    [
+      [
+        "caju.comando.argumentos",
+        [],
+        [
+          [
+            "caju.argumento",
+            [
+              ["caju.texto", "#d53571"],
+              ["caju.texto", "texto"]
+            ],
+            [
+              ["caju.texto", "aplicativo.comando.nome"],
+              ["caju.texto", "aplicativo.comando.texto"]
+            ],
+            []
+          ]
+        ],
+        []
+      ],
+      ["caju.comando.aceita", [], [], []]
+    ]
+  ]
+]
